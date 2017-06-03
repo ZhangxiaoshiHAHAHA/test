@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0034)http://crazylight.adidasevent.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Voxel World</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">
+    <!--<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="./Voxel World/main.css">
+
+<script type="text/javascript" async="" src="./Voxel World/e.gif"></script><script type="text/javascript" async="" src="./Voxel World/e(1).gif"></script><script type="text/javascript" async="" src="./Voxel World/e(2).gif"></script><script id="__v3__clicki_js_tracker_loader__" type="text/javascript" charset="UTF-8" src="./Voxel World/clicki.js"></script><script type="text/javascript" async="" src="./Voxel World/e(3).gif"></script><script type="text/javascript" async="" charset="utf-8" src="./Voxel World/11541"></script><script async="" src="./Voxel World/analytics.js"></script><script type="text/javascript" charset="utf-8" async="" src="./Voxel World/0.main.js"></script></head>
+
+<body>
+<div id="main">
+    <div id="three"></div>
+    <!--<div id="pop">-->
+    <!--<div class="list">-->
+    <!--<img src="http://static.im20.com.cn/v1460027595!/crazylight.adidasevent.com/impublic/images/product/p1.jpg"/>-->
+    <!--<img src="http://static.im20.com.cn/v1460027595!/crazylight.adidasevent.com/impublic/images/product/p2.jpg"/>-->
+    <!--<img src="http://static.im20.com.cn/v1460027595!/crazylight.adidasevent.com/impublic/images/product/p3.jpg"/>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div id="show" class="pop">
+        <ul>
+            <li>
+                <img src="./Voxel World/p1.jpg">
+                <img class="info1" src="./Voxel World/t1.png">
+            </li>
+            <li>
+                <img src="./Voxel World/p2.jpg">
+                <img class="info2" src="./Voxel World/t2.png">
+            </li>
+            <li>
+                <img src="./Voxel World/p3.jpg">
+                <img class="info3" src="./Voxel World/t3.png">
+            </li>
+            <li>
+                <img src="./Voxel World/p1.jpg">
+                <img class="info1" src="./Voxel World/t1.png">
+            </li>
+        </ul>
+        <img class="left" src="./Voxel World/left.png">
+        <img class="right" src="./Voxel World/right.png">
+        <img class="close" src="./Voxel World/close.png">
+    </div>
+
+    <div id="share" class="pop">
+        <div class="bg"></div>
+        <img class="t1" src="./Voxel World/t1(1).png">
+    </div>
+</div>
+<div id="tip"></div>
+
+<audio id="bgm" src="./Voxel World/bgm.mp3" preload="auto">
+
+
+<script type="text/javascript" async="" src="./Voxel World/t.js"></script><script type="text/javascript" src="./Voxel World/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="./Voxel World/wx.1.0.js"></script>
+
+<script src="./Voxel World/zepto.min.js"></script>
+
+<script type="text/javascript">
+    _mwx=window._mwx||{};
+    _mwx.siteId= 8000525;
+    //    _mwx.openId=xxxxxxxxxxx; //OpenID为微信提供的用户唯一标识,需要开发者传入，如果没有OpenID，去掉该代码即可。
+    _mwx.debug=true;//代码调试阶段，加入此代码，正式上线之后去掉该代码
+</script>
+
+<script type="text/javascript">
+    var isShareReady = false;
+
+    var url = "http://" + location.host + '/';
+
+    var amObj = {
+        title: "神速出击，决不跟随",
+        desc: "如何疾驰球场，释放自己最快的进攻潜能？adidas全新CrazyLight Boost 2.5为你揭晓答案。",
+        link: _mz_wx_shareUrl(url),
+        imgUrl: url + "im" + "public/images/share.jpg",
+        success: function () {
+            if(typeof(ga) == 'function') ga('send', 'event', 'Share', 'Share', 'share_friends');
+            _mz_wx_friend();
+//            if (isShareReady) doStatistics(['share', 'wechat_share']);
+        },
+        cancel: function () {
+        }
+    };
+
+    var tlObj = {
+        title: "神速出击，决不跟随",
+        desc: "神速出击，决不跟随",
+        link: _mz_wx_shareUrl(url),
+        imgUrl: url + "im" + "public/images/share.jpg",
+        success: function () {
+            if(typeof(ga) == 'function') ga('send', 'event', 'Share', 'Share', 'share_moments');
+            _mz_wx_timeline();
+//            if (isShareReady) doStatistics(['share', 'wechat_share']);
+        },
+        cancel: function () {
+        }
+    };
+
+    wx.ready(function () {
+        wx.onMenuShareAppMessage(amObj);
+        wx.onMenuShareTimeline(tlObj);
+    });
+
+    wx.error(function (res) {
+        alert("验证未成功")
+    });
+
+    var config = {
+        debug: false,
+        jsApiList: ['onMenuShareAppMessage','onMenuShareTimeline','hideOptionMenu'],
+//        jsApiList: ['hideMenuItems','hideOptionMenu']
+    };
+
+    function getwxshareconfig() {
+        $.ajax({
+            url: location.href.indexOf("http://crazylight.adidasevent.com/") !== -1 ? "http://bbcny.adidasevent.com/User/getSignPackage" : "http://wx.im20.com.cn/WxApi/getSignPackage",
+            type: "GET",
+            dataType: 'jsonp',
+//            data: { refresh: 0 },
+//            data:{url:location.href},
+            jsonp: 'imCallback',
+            success: function (json) {
+                config.appId = json.data.appId;
+                config.timestamp = json.data.timestamp;
+                config.nonceStr = json.data.nonceStr;
+                config.signature = json.data.signature;
+                config.rawString = json.data.rawString;
+                wx.config(config);
+            }
+        });
+    }
+
+    getwxshareconfig();
+</script>
+
+<script src="./Voxel World/main.js"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-52436556-21', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+    (function() {
+        window._CiQ11541 = window._CiQ11541 || [];
+        window._CiQ11541.push(['_cookieUseRootDomain', true]);
+        var c = document.createElement('script');
+        c.type = 'text/javascript';
+        c.async = true;
+        c.charset = 'utf-8';
+        c.src = '//collect.cn.miaozhen.com/ca/11541';
+        var h = document.getElementsByTagName('script')[0];
+        h.parentNode.insertBefore(c, h);
+    })();
+</script>
+<noscript>
+    &lt;link href="//collect.cn.miaozhen.com/refer/collect?i=11541&amp;v=13922245942&amp;pu=http%3A//%28NoScriptPageviews%29&amp;pt=NoScriptPageviews&amp;ru=http%3A//%28NoScriptClients%29&amp;csh=1000&amp;csw=1000&amp;css=10" rel="stylesheet" type="text/css" /&gt;
+</noscript>
+
+
+</audio></body></html>
